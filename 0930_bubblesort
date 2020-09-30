@@ -1,0 +1,19 @@
+def Bubble_Sort(datas):
+    for i in range(1, len(datas)): # 
+        for j in range(len(datas)-i):   # 
+            if datas[j] > datas[j+1]:   # 
+                datas[j], datas[j+1] = datas[j+1], datas[j]
+    return datas
+
+
+if __name__ == '__main__':
+    import random
+    a = []
+    #a = list(range(20))
+    for i in range(6):   #let user input six numbers
+      number = int(input())
+      a.append(number)
+    random.shuffle(a)
+    print(a)
+    a = Bubble_Sort(a)
+    print(a)
