@@ -24,3 +24,4 @@ for i in range(12):
     i+=1;
     print("time:", i, "is ", end="");print(timedetect(i))
     print("spece", i, "is ", end="");print(spacedetect(i))
+#output photo is at 2020/10/02 assignment
