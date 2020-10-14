@@ -1,5 +1,7 @@
 #sequential search
 
+# written by myself
+
 data=[20, 31, 50, 17, 16, 36, 19, 8]
 
 def sequential_search(data, key):
