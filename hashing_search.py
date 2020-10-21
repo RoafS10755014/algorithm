@@ -19,24 +19,27 @@ def create_table(num, index):
             tmp=(tmp+1)%INDEXBOX
 
 def square_table(num, index):
-    tmp=num%INDEXBOX
     time = 0
+    tmp=num%INDEXBOX
     while True:
         time += 1
         if index[tmp]==-1:
             index[tmp]=num
             break
         else:
+            tmp=num%INDEXBOX
             tmp=(tmp+(time*time))%INDEXBOX
 
 def rehashing_table(num, index):
     tmp=num%INDEXBOX
-    time = 1  # we suppose that our rahashing function is h1(x)=(x+2) mod b and so on
+    time = 0  # we suppose that our rahashing function is h1(x)=(x+2) mod b and so on
     while True:
         if index[tmp]==-1:
             index[tmp]=num
             break
         else:
+            time += 1
+            tmp=num%INDEXBOX
             tmp=(tmp+(time*2))%INDEXBOX
 
 #Main
