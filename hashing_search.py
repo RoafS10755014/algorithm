@@ -18,7 +18,7 @@ def create_table(num, index):
         else:
             tmp=(tmp+1)%INDEXBOX
 
-def square_table(num, index):
+def quadratic_table(num, index):
     time = 0
     tmp=num%INDEXBOX
     while True:
@@ -76,7 +76,7 @@ print_data(data, MAXNUM)
 
 print("平方雜湊表內容：")
 for i in range(MAXNUM):
-    square_table(data[i], index)
+    quadratic_table(data[i], index)
     print('  %2d =>' %data[i], end='')
     print_data(index, INDEXBOX)
 
